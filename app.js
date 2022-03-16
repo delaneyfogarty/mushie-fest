@@ -76,14 +76,16 @@ function displayFriends() {
 				friend.satisfaction++;
 				mushroomCount--;
 			}
-			displayFriends();
-			displayMushrooms();
 		});
 
-		// append the friendEl to the friends list in DOM
-		friendsEl.append(friendEl);
-	}
+		displayFriends();
+		displayMushrooms();
+	};
+
+	// append the friendEl to the friends list in DOM
+	friendsEl.append(friendEl);
 }
+
 
 function displayMushrooms() {
 	// clear out the mushroom div
